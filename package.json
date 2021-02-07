@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -r https://0061c83e60ba1c643f01f56678096c55157f2285@github.com/davidjaimes/davidjaimes.github.io.git"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.4",
