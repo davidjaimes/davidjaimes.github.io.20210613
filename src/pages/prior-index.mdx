@@ -1,0 +1,162 @@
+import {Image, Badge, Card, Button, Row, Col, Alert} from "react-bootstrap"
+import {MountLaguna} from "../images/mount-laguna.jpg"
+import Logo from "../images/favicon.png"
+
+
+<Image src={Logo} style={{height: "80px"}} className="mb-5"/>
+<Badge variant="success">v5.20</Badge>
+
+# A Collection of Data Analysis Tools and Visualizations for Students and Scientists
+
+<p className="text-muted">
+Discover the many different ways to collect, analyze, and distribute data gathered from different sources. This is a one-stop shop to build and deploy your own project with easy to follow instructions.
+</p>
+
+<Card className="shadow mt-5 mb-5 bg-light">
+  <Card.Body>
+    <Card.Title>
+      <Button href="https://www.python.org/" variant="outline-primary stretched-link">Python</Button> <small className="text-muted">https://www.python.org/</small></Card.Title>
+    <Card.Text>
+    Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+    </Card.Text>
+  </Card.Body>
+</Card>
+
+### Features
+
+- Open-source programming language.
+- Simple and readable syntax.
+- Popularity is trending and growing.
+- Build all tyoes of software.
+
+*Recommended:* Use the **Miniconda** or **Anaconda** distribution for easy installation and configuration. Then, import your favorite libraries and try out the following example that produces **The Zen of Python**: 
+
+```python
+s = """Gur Mra bs Clguba, ol Gvz Crgref
+Ornhgvshy vf orggre guna htyl.
+Rkcyvpvg vf orggre guna vzcyvpvg.
+Fvzcyr vf orggre guna pbzcyrk.
+Pbzcyrk vf orggre guna pbzcyvpngrq.
+Syng vf orggre guna arfgrq.
+Fcnefr vf orggre guna qrafr.
+Ernqnovyvgl pbhagf.
+Fcrpvny pnfrf nera'g fcrpvny rabhtu gb oernx gur ehyrf.
+Nygubhtu cenpgvpnyvgl orngf chevgl.
+Reebef fubhyq arire cnff fvyragyl.
+Hayrff rkcyvpvgyl fvyraprq.
+Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.
+Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.
+Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh'er Qhgpu.
+Abj vf orggre guna arire.
+Nygubhtu arire vf bsgra orggre guna *evtug* abj.
+Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg'f n onq vqrn.
+Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.
+Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg'f qb zber bs gubfr!"""
+
+d = {}
+for c in (65, 97):
+    for i in range(26):
+        d[chr(i+c)] = chr((i+13) % 26 + c)
+
+print("".join([d.get(c, c) for c in s]))
+```
+
+<br/>
+
+| The Zen of Python, by Tim Peters |
+| --- | 
+| Beautiful is better than ugly. |
+| Explicit is better than implicit. |
+| Simple is better than complex. |
+| Complex is better than complicated. |
+| Flat is better than nested. |
+| Sparse is better than dense. |
+| Readability counts. |
+| Special cases aren't special enough to break the rules. |
+| Although practicality beats purity. |
+| Errors should never pass silently. |
+| Unless explicitly silenced. |
+| In the face of ambiguity, refuse the temptation to guess. |
+| There should be one-- and preferably only one --obvious way to do it. |
+| Although that way may not be obvious at first unless you're Dutch. |
+| Now is better than never. |
+| Although never is often better than *right* now. |
+| If the implementation is hard to explain, it's a bad idea. |
+| If the implementation is easy to explain, it may be a good idea. |
+| Namespaces are one honking great idea -- let's do more of those! |
+
+<Card className="shadow mt-5 mb-5 bg-light">
+  <Card.Body>
+    <Card.Title>
+    <Button href="https://docs.conda.io/en/latest/miniconda.html" variant="outline-primary stretched-link">Miniconda</Button> <small className="text-muted">https://docs.conda.io/en/latest/miniconda.html</small></Card.Title>
+    <Card.Text>
+    Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the <code>conda install command</code> to install 720+ additional conda packages from the Anaconda repository.
+    </Card.Text>
+  </Card.Body>
+</Card>
+
+### Setup
+
+Download the latest bash file from the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) page and install with the following command:
+
+```bash
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+
+Update conda and initialize zsh environment for macOS Catalina users:
+
+```bash
+conda update conda
+conda init zsh
+```
+
+Install all Python libraries at once (NumPy and SciPy will also be installed):
+
+```bash
+conda install matplotlib pandas astropy notebook scikit-learn
+```
+
+<Card className="shadow mt-5 mb-5 bg-light">
+  <Card.Body>
+    <Card.Title>
+    <Button href="https://www.sublimetext.com/" variant="outline-primary stretched-link">Sublime Text</Button> <small className="text-muted">https://www.sublimetext.com/</small></Card.Title>
+    <Card.Text>
+    A sophisticated text editor for code, markup and prose.
+    </Card.Text>
+  </Card.Body>
+</Card>
+
+### Settings
+
+Preferences.sublime -setings -- User:
+
+```js
+{
+	"color_scheme": "Packages/Theme - Gravity/One Dark Gravity.tmTheme",
+	"font_size": 13,
+	"gravity_highlight_color_blue": true,
+	"gravity_tab_font_small": true,
+	"gravity_tab_height_short": true,
+	"gravity_title_bar": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"theme": "Gravity One.sublime-theme",
+	"word_wrap": true
+}
+```
+
+<br/>
+
+### Features
+
+- **GoTo Anything:** Use Goto Anything to open files with only a few keystrokes, and instantly jump to symbols, lines or words.
+- **Multiple Selections:** Make ten changes at the same time, not one change ten times. Multiple selections allow you to interactively change many lines at once, rename variables with ease, and manipulate files faster than ever.
+- **Powerful API:** Sublime Text has a powerful, Python API that allows plugins to augment built-in functionality.
+- **Split Editing:** Get the most out of your wide screen monitor with split editing support. Edit files side by side, or edit two locations in the one file. You can edit with as many rows and columns as you wish. Take advantage of multiple monitors by editing with multiple windows, and using multiple splits in each window.
+- **Performance:** Sublime Text is built from custom components, providing for unmatched responsiveness. From a powerful, custom cross-platform UI toolkit, to an unmatched syntax highlighting engine, Sublime Text sets the bar for performance.
+- **Command Palette:** The Command Palette holds infrequently used functionality, like sorting, changing the syntax and changing the indentation settings. With just a few keystrokes, you can search for what you want, without ever having to navigate through the menus or remember obscure key bindings.
+- **Customize Anything:** Key bindings, menus, snippets, macros, completions and more - just about everything in Sublime Text is customizable with simple JSON files. This system gives you flexibility as settings can be specified on a per-file type and per-project basis.
+- **Cross Platform:** Sublime Text is available for Mac, Windows and Linux. One license is all you need to use Sublime Text on every computer you own, no matter what operating system it uses.
