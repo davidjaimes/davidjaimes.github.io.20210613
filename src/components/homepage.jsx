@@ -5,8 +5,9 @@ import React from "react"
 import {Container, Row, Col} from 'react-bootstrap'
 
 // Import Templates
-import Navigation from "../components/navigation"
 import Head from "../components/head"
+import Navigation from "../components/navigation"
+import Footer from "../components/footer"
 
 
 export default function HomePage({children}) {
@@ -22,6 +23,8 @@ export default function HomePage({children}) {
 					</Col>
 				</Row>
 			</Container>
+
+			<Footer></Footer>
 			
 		</div>
 	)

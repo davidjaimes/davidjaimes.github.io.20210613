@@ -7,6 +7,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 // Import Templates
 import Navigation from "../components/navigation"
 import CardIndex from "../components/card-index"
+import Footer from "../components/footer"
 
 
 export default function Index() {
@@ -24,6 +25,8 @@ export default function Index() {
 					</Col>
 				</Row>
 			</Container>
+
+			<Footer></Footer>
 			
 		</div>
 	)
