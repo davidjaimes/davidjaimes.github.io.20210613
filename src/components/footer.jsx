@@ -18,9 +18,9 @@ export default function Footer() {
 							<FaTwitter size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
 							<FaInstagram size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
 							<FaFacebook size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
-							<FaYoutube size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
+							<FaYoutube size={30} color={'grey'}/>
 						</p>
-						<p className="text-dark text-center" style={{fontSize: "13px"}}>Copyright &copy; 2021 David Jaimes. All rights reserved. | <a href='/About'>About</a> | <a href='/legal'>Terms of Use</a> |</p>
+						<p className="text-dark text-center" style={{fontSize: "13px"}}>Copyright &copy; 2021 David Jaimes. All rights reserved.</p>
 						<p className="text-dark text-center" style={{fontSize: "15px"}}>Yo <span style={{color: "#f07199"}}>&hearts;</span> Naxiely</p>
 					</Col>
 				</Row>
