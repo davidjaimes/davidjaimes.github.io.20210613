@@ -1,4 +1,8 @@
 import React, {Component} from "react";
+// Bootstrap Dependencies
+import {Container, Row, Col} from 'react-bootstrap';
+
+
 export default class Comments extends Component {
 
   constructor(props){ 
@@ -18,7 +22,13 @@ export default class Comments extends Component {
 
   render() {
     return (
+        <Container fluid>
+        <Row>
+        <Col style={{maxWidth: "768px"}}>
         <div ref={this.commentBox} className="comment-box"></div>
+        </Col>
+        </Row>
+        </Container>
     );
   }
 }
