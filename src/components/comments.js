@@ -22,7 +22,7 @@ export default class Comments extends Component {
 
   render() {
     return (
-        <Container fluid>
+        <Container fluid className="pr-0 pl-0">
         <Row>
         <Col style={{maxWidth: "768px"}}>
         <div ref={this.commentBox} className="comment-box"></div>

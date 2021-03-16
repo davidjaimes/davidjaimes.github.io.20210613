@@ -13,7 +13,7 @@ export default function Footer() {
 
 			<Container className="mt-5 mb-5">
 				<Row className="justify-content-center mt-2 mb-2">
-					<Col style={{maxWidth: "768px"}}>
+					<Col style={{maxWidth: "768px"}} className="pl-0 pr-0">
 						<p className="text-center">
 							<FaGithub size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
 							<FaLinkedin size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
