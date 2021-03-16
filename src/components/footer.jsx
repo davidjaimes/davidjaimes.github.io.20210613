@@ -13,9 +13,6 @@ export default function Footer() {
 		<Navbar expand="lg" fixed="sticky">
 			<Container className="justify-content-center mt-5 mb-5">
 				<Row className="mt-2 mb-2">
-
-					<Comments/>
-
 					<Col style={{maxWidth: "768px"}}>
 						<p className="text-center">
 							<FaGithub size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,7 +23,9 @@ export default function Footer() {
 							<FaYoutube size={30} color={'grey'}/>
 						</p>
 						<p className="text-dark text-center" style={{fontSize: "13px"}}>Copyright &copy; 2021 David Jaimes. All rights reserved.</p>
-						<p className="text-dark text-center" style={{fontSize: "15px"}}>Yo <span style={{color: "#f07199"}}>&hearts;</span> Naxiely</p>
+						<p className="text-dark text-center mb-5" style={{fontSize: "15px"}}>Yo <span style={{color: "#f07199"}}>&hearts;</span> Naxiely</p>
+
+						<Comments></Comments>
 					</Col>
 				</Row>
 			</Container>
