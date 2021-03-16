@@ -1,12 +1,11 @@
 // React Dependencies
-import React from 'react'
+import React from "react"
 
 // Bootstrap Dependencies
 import {Navbar, Container, Row, Col} from 'react-bootstrap'
 import {FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaYoutube} from 'react-icons/fa'
 
-//import comments
-import Comments from "../components/comment"
+import Comments from "../components/comments"
 
 
 export default function Footer() {

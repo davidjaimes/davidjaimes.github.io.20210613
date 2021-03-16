@@ -1,1 +1,0 @@
-{ excerpt? <></>: <Comment commentBox={commentBox} />}

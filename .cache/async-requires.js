@@ -2,6 +2,7 @@
 const preferDefault = m => (m && m.default) || m
 
 exports.components = {
+  "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-about-index-mdx": () => import("./../../../src/pages/about/index.mdx" /* webpackChunkName: "component---src-pages-about-index-mdx" */),
   "component---src-pages-eclipsing-binaries-index-mdx": () => import("./../../../src/pages/eclipsing-binaries/index.mdx" /* webpackChunkName: "component---src-pages-eclipsing-binaries-index-mdx" */),
   "component---src-pages-gatsby-config-index-mdx": () => import("./../../../src/pages/gatsby-config/index.mdx" /* webpackChunkName: "component---src-pages-gatsby-config-index-mdx" */),
