@@ -5,6 +5,9 @@ import React from 'react'
 import {Navbar, Container, Row, Col} from 'react-bootstrap'
 import {FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaYoutube} from 'react-icons/fa'
 
+//import comments
+import Comments from "../components/comment"
+
 
 export default function Footer() {
 	return (
@@ -12,14 +15,7 @@ export default function Footer() {
 			<Container className="justify-content-center mt-5 mb-5">
 				<Row className="mt-2 mb-2">
 
-					<script
-						async
-						src="https://utteranc.es/client.js"
-						repo="davidjaimes/comments"
-						issue-term="title"
-						theme="github-light"
-						crossorigin="anonymous"
-					></script>
+					<Comments/>
 
 					<Col style={{maxWidth: "768px"}}>
 						<p className="text-center">
