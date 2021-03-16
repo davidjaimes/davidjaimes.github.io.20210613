@@ -14,7 +14,7 @@ export default function Footer() {
 			<Container className="justify-content-center mt-5 mb-5">
 				<Row className="mt-2 mb-2">
 					<Col style={{maxWidth: "768px"}}>
-						<p className="text-center">
+						<p className="text-center" style={{width: "100%"}}>
 							<FaGithub size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
 							<FaLinkedin size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
 							<FaTwitter size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
