@@ -11,6 +11,16 @@ export default function Footer() {
 		<Navbar expand="lg" fixed="sticky">
 			<Container className="justify-content-center mt-5 mb-5">
 				<Row className="mt-2 mb-2">
+
+					<script
+						async
+						src="https://utteranc.es/client.js"
+						repo="davidjaimes/comments"
+						issue-term="title"
+						theme="github-light"
+						crossorigin="anonymous"
+					></script>
+
 					<Col style={{maxWidth: "768px"}}>
 						<p className="text-center">
 							<FaGithub size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
