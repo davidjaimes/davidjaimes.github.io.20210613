@@ -15,7 +15,7 @@ export default class Comments extends Component {
       scriptEl.setAttribute("crossorigin","anonymous");
       scriptEl.setAttribute("async", true);
       scriptEl.setAttribute("repo", "davidjaimes/comments");
-      scriptEl.setAttribute("issue-term", "title");
+      scriptEl.setAttribute("issue-term", "URL");
       scriptEl.setAttribute( "theme", "github-light");
       this.commentBox.current.appendChild(scriptEl);
   }
