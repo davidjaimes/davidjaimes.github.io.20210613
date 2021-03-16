@@ -11,8 +11,8 @@ import Comments from "../components/comments"
 export default function Footer() {
 	return (
 
-			<Container className="justify-content-center mt-5 mb-5">
-				<Row className="mt-2 mb-2">
+			<Container className="mt-5 mb-5">
+				<Row className="justify-content-center mt-2 mb-2">
 					<Col style={{maxWidth: "768px"}}>
 						<p className="text-center">
 							<FaGithub size={30} color={'grey'}/> &nbsp;&nbsp;&nbsp;&nbsp;
