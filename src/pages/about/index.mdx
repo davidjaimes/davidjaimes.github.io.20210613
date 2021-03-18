@@ -1,22 +1,57 @@
-<h1 align="center" style={{marginTop: "2em"}}>Husband. Scientist. Trail Runner.</h1>
+import { Alert } from 'react-bootstrap';
 
-Creativity and imagination are great starting places, but hard-headed thinking and extreme attention to detail are essential to success.
-
-<p align="right">-Jet Propulsion Laboratory</p>
+<h1 align="center" style={{marginTop: "2em", marginBottom: "1em"}}>Husband. Scientist. Trail Runner.</h1>
 
 ![profile](../../images/profile.jpg)
+<p style={{fontSize: '12px'}}><b>Photo Credit:</b> Naxiely Cedano; <b>Location:</b> The Cloisters, NYC.</p>
 
 <br/>
 
-## Statement
+## About me
+I'm a [data scientist](https://en.wikipedia.org/wiki/Data_science) with a bachelor's in astronomy and a certificate in data science and visualization from UC San Diego.
 
-Data Scientist with a B.S. in Astronomy and a certificate in Data Science and Visualization from the University of California. Exceptional analytical and conceptual thinking skills that drive an unquenchable, technical curiosity to find truths embedded in any dataset. Passionate about utilizing a scientific mindset when developing incredibly fast, efficient, and insightful solutions at high-performing companies where modern analysis toolkits are conventional. Senior-level experience using Python, VBA, Excel, Numpy, Pandas, Scipy, Astropy statistical modules and data visualization libraries like Bokeh and Matplotlib. Understands and teaches best practices when developing applications that directly affects the operational execution of any organization. My eagerness to adopt new ways of solving complex problems enables me to adapt quickly into new or changing team environments.
+I possess: 
+
+- Exceptional analytical and conceptual thinking skills that drive an unquenchable, technical curiosity to find truths embedded in any dataset.
+- Senior-level experience using statistical modules and data visualization libraries.
+
+I have a passion for:
+
+- Utilizing a scientific mindset when developing incredibly fast, efficient, and insightful solutions at high-performing companies where modern analysis toolkits are conventional.
+- Understanding and teaching best practices when developing applications that directly affects the operational execution of any organization.
 
 <br/>
 
-## Biography
+## Fun Question to Ask
+How much does a teaspoon of neutron star matter weight? Please answer in of number of elephants.
 
-I, David Jaimes, a native San Diegan from California, received my B.S. in astronomy from San Diego State University (SDSU) in 2013. At SDSU, my research with Eric L. Sandquist focused on investigating the age of the old open cluster, NGC 6819.
+```python
+from astropy import units as u
+import numpy as np
+
+elephant_mass = 5900 * u.kg  # about 13,000 lbs
+neutron_mass = 1.4 * u.solMass  # about mass of Sun
+neutron_volume = (4/3) * np.pi * pow(10 * u.km, 3)  # 10 km radius
+teaspoon_volume = 5 * pow(u.cm, 3)
+
+neutron_teaspoon_mass = neutron_mass * teaspoon_volume / neutron_volume
+N_elephants = (neutron_teaspoon_mass / elephant_mass).decompose()
+print(f'{int(N_elephants):,} elephants!')
+```
+
+<br/>
+
+And, the answer is ...
+
+```python
+563,200,886 elephants!
+```
+
+<br/>
+
+## Short Biography
+
+I'm a native San Diegan from California, received my B.S. in astronomy from San Diego State University (SDSU) in 2013. At SDSU, my research with Eric L. Sandquist focused on investigating the age of the old open cluster, NGC 6819.
 
 I also worked for Astronomical Research Cameras, assembling controllers and multiplexors for the Visible Integral Field Replicable Unit Spectrographs (VIRUS) used by the Hobby-Eberly Telescope Dark Energy Experiment project at the University of Texas, Austin.
 
