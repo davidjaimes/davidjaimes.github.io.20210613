@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-advanced-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{

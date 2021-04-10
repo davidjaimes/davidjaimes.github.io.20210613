@@ -1,7 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-export default () =>
+export default () => (
+	<>
     <Helmet>
     
         {/* <!-- Primary Meta Tags --> */}
@@ -46,3 +47,5 @@ export default () =>
         <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
     </Helmet>
+    </>
+)

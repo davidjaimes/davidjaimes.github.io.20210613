@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://djaimes.com`,
 	},
 	plugins: [
+		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-advanced-sitemap`,
 		{
 	    resolve: `gatsby-plugin-sharp`,

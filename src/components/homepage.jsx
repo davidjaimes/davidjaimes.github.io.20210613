@@ -1,19 +1,24 @@
 // React Dependencies
-import React from "react"
+import React from "react";
+import {Helmet} from "react-helmet";
 
 // Bootstrap Dependencies
 import {Container, Row, Col} from 'react-bootstrap'
 
 // Import Templates
-import Head from "../components/head"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 
 
 export default function HomePage({children}) {
 	return (
-		<div>
-			<Head/>
+		<>
+
+			<Helmet>
+				<title>Cool</title>
+				<html lang="en"/>
+			</Helmet>
+
 			<Navigation></Navigation>
 
 			<Container fluid>
@@ -26,6 +31,6 @@ export default function HomePage({children}) {
 
 			<Footer></Footer>
 			
-		</div>
+		</>
 	)
 }
