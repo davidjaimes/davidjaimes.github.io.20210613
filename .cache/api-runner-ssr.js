@@ -1,13 +1,17 @@
 var plugins = [{
+      name: 'gatsby-plugin-react-helmet',
       plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-advanced-sitemap',
       plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-advanced-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-manifest',
       plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"icon":"src/images/favicon.png","icon_options":{"purpose":"any maskable"},"name":"David Jaimes","short_name":"djaimes","description":"Husband, Scientist, and Trail Runner.","lang":"en","start_url":"/","display":"standalone","theme_color":"#fff","background_color":"#fff","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"3904f8ae34cd845e664573dea6d38c6c"},
     },{
+      name: 'gatsby-plugin-mdx',
       plugin: require('/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
       options: {"plugins":[{"resolve":"/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-remark-images","id":"580fd6f0-a0f4-5cb7-ac28-2bea65acb525","name":"gatsby-remark-images","version":"3.3.8","pluginOptions":{"plugins":[]},"nodeAPIs":[],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]}],"remarkPlugins":[null],"rehypePlugins":[null],"defaultLayouts":{"default":"/Users/djaimes/davidjaimes.github.io/src/components/homepage.jsx"},"extensions":[".mdx",".md"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-prismjs","options":{"classPrefix":"language-","inlineCodeMarker":null}},{"resolve":"gatsby-remark-images","options":{"maxWidth":800}}]},
     }]
@@ -37,11 +41,21 @@ module.exports = (api, args, defaultReturn, argTransform) => {
     if (!plugin.plugin[api]) {
       return undefined
     }
-    const result = plugin.plugin[api](args, plugin.options)
-    if (result && argTransform) {
-      args = argTransform({ args, result })
+    try {
+      const result = plugin.plugin[api](args, plugin.options)
+      if (result && argTransform) {
+        args = argTransform({ args, result })
+      }
+      return result
+    } catch (e) {
+      if (plugin.name !== `default-site-plugin`) {
+        // default-site-plugin is user code and will print proper stack trace,
+        // so no point in annotating error message pointing out which plugin is root of the problem
+        e.message += ` (from plugin: ${plugin.name})`
+      }
+
+      throw e
     }
-    return result
   })
 
   // Filter out undefined results.
