@@ -13,7 +13,7 @@ import Footer from "../components/footer"
 export default function HomePage({children}) {
 	return (
 		<>
-
+		<React.Fragment>
 			<Helmet>
 				<title>Cool</title>
 				<html lang="en"/>
@@ -30,7 +30,7 @@ export default function HomePage({children}) {
 			</Container>
 
 			<Footer></Footer>
-			
+		</React.Fragment>
 		</>
 	)
 }
