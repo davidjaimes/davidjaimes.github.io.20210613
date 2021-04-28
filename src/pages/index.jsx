@@ -1,5 +1,6 @@
 // React Dependencies
-import React from "react"
+import React from "react";
+import {Helmet} from "react-helmet";
 
 // Bootstrap Dependencies
 import {Container, Row, Col} from 'react-bootstrap'
@@ -12,7 +13,16 @@ import Footer from "../components/footer"
 
 export default function Index() {
 	return (
-		<div>
+		<>
+
+			<Helmet>
+				<html lang='en-us'/>
+      			<meta charset="utf-8"/>
+      			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+      			<meta name="description" content="Utilization of Data Analysis and Visualization Tools: Discover the many different ways to collect, analyze, and distribute data gathered from different sources. This is a one-stop shop to build and deploy your own project with easy to follow instructions."/>
+      			<title>David Jaimes: Husband. Scientist. Trail Runner.</title>
+			</Helmet>
+
 			<Navigation></Navigation>
 
 			<Container fluid>
@@ -28,6 +38,6 @@ export default function Index() {
 
 			<Footer></Footer>
 			
-		</div>
+		</>
 	)
 }

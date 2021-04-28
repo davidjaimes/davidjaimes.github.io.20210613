@@ -23,6 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/favicon.png`,
+        icon_options: {purpose: `any maskable`},
         name: `David Jaimes`,
         short_name: `djaimes`,
         description: `Husband, Scientist, and Trail Runner.`,
@@ -33,6 +34,7 @@ module.exports = {
         background_color: `#fff`
       },
     },
+
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
