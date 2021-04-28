@@ -9,8 +9,8 @@ module.exports = {
     siteUrl: `https://djaimes.com`,
 	},
 	plugins: [
+		`gatsby-plugin-postcss`,
 		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-advanced-sitemap`,
 		{
 	    resolve: `gatsby-plugin-sharp`,
 	    options: {
@@ -34,7 +34,9 @@ module.exports = {
         background_color: `#fff`
       },
     },
-
+  		{
+  			resolve: `gatsby-plugin-offline`,
+  		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
