@@ -29,11 +29,11 @@ I suggest creating a new folder in your home directory and placing the jar file 
 mkdir ~/jskycalc
 ```
 
-```shell
+```bash
 mv ~/Downloads/JSkyCalc.jar ~/jskycalc
 ```
 
-```shell
+```bash
 cd ~/jskycalc
 ```
 
@@ -43,7 +43,7 @@ cd ~/jskycalc
 
 Run the java command on the jar file and it should start right up. If you don't have java installed in your system you will get a messege. Click on "more info" and it will take you to the [Oracle-Java][1] website.  Click on "Oracle JDK Download" button from **Java SE 14** section and then download the `jdk-14.0.1_osx-x64_bin.dmg` file.
 
-```shell
+```bash
 java -jar JSkyCalc.jar
 ```
 
@@ -57,7 +57,7 @@ java -jar JSkyCalc.jar
 
 To add Mount Laguna Observatory to JSkyCalc, start by unpacking the jar file.
 
-```shell
+```bash
 jar -xvf JSkyCalc.jar
 ```
 
@@ -67,7 +67,7 @@ jar -xvf JSkyCalc.jar
 
 Open `skycalcsites.dat` and add Mount Laguna Observatory as the first site (above Kitt Peak)--it will become the default.
 
-```
+```bash
 "Mount Laguna Obs.", 7.76173, 32.84, 8., 1, "Pacific", "P", 1859., 1859.
 ```
 
@@ -81,7 +81,7 @@ Open `skycalcsites.dat` and add Mount Laguna Observatory as the first site (abov
 
 Reconstruct the jar file and all the changes will take effect.
 
-```shell
+```bash
 jar -cvmf myManifest.mf JSkyCalc.jar .
 ```
 
@@ -108,7 +108,7 @@ Finally, use the command `source ~/.bash_profile` to source the file and then us
 
 The following line is the general format for JSkyCalc (.dat) files:
 
-```
+```bash
 Name_no_blanks hh mm ss dd mm ss equinox +++
 ```
 
@@ -116,7 +116,7 @@ Name_no_blanks hh mm ss dd mm ss equinox +++
 
 It's fine if all your stars have equinox=2000. Here is an example of `observe-star.dat` formatted for JSkyCalc.
 
-```
+```bash
 some_star 00 37 52.92 -09 42 16.5 2000.0 +++
 ```
 
