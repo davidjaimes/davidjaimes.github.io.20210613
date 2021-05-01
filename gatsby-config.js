@@ -13,7 +13,6 @@ module.exports = {
 	    	resolve: `gatsby-plugin-sharp`,
 	    	options: {
 				useMozJpeg: false,
-				stripMetadata: true,
 				defaultQuality: 75,
 	    	},
 	 	},
@@ -68,7 +67,7 @@ module.exports = {
 	            		options: {
 	            			maxWidth: 800,
 	            			showCaptions: true,
-	            			srcSetBreakpoints: [ 300 ]
+	            			markdownCaptions: true,
 	            		},
 	          		},
 				]
