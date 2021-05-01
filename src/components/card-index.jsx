@@ -55,7 +55,7 @@ export default function CardIndex() {
 							<Badge pill variant="dark">Astronomy</Badge>{' '}
 							<Badge pill variant="dark">Java</Badge>{' '}
 						</Media.Body>
-						<Image src={JSkyCalc} rounded className="mb-3 border border-secondary" width={120} height={80} alt='JSkyCalc'/>
+						<Image src={JSkyCalc} rounded className="mb-3 border border-secondary" width={120} height={81} alt='JSkyCalc'/>
 					</Media>
 					<Card.Text>
 						<b>JSkycalc</b> expedites the "time-and-the-sky" calculations needed by observational astronomers. To follow the original directions on setting up JSkyCalc on your computer, go to <b>John Thorstensen's</b> website. His directions might be a little outdated (from year 2008) but they still work.
