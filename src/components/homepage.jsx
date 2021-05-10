@@ -21,7 +21,7 @@ export default function HomePage({children}) {
 			<Navigation></Navigation>
 
 			<Container fluid>
-				<Row className="justify-content-center">
+				<Row className="justify-content-center m-0">
 					<Col style={{maxWidth: "768px"}}>
 						{children}
 					</Col>
