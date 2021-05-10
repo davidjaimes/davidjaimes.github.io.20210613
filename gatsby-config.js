@@ -68,7 +68,7 @@ module.exports = {
 	            		options: {
 	            			maxWidth: 768,
 	            			showCaptions: false,
-	            			markdownCaptions: false,
+	            			markdownCaptions: true,
 	            		},
 	          		},
 				]
