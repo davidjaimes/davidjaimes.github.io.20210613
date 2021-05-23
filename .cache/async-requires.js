@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-kepler-16-b-index-mdx": () => import("./../../../src/pages/kepler-16b/index.mdx" /* webpackChunkName: "component---src-pages-kepler-16-b-index-mdx" */),
   "component---src-pages-legal-index-mdx": () => import("./../../../src/pages/legal/index.mdx" /* webpackChunkName: "component---src-pages-legal-index-mdx" */),
   "component---src-pages-linear-regression-index-mdx": () => import("./../../../src/pages/linear-regression/index.mdx" /* webpackChunkName: "component---src-pages-linear-regression-index-mdx" */),
-  "component---src-pages-mac-os-config-index-mdx": () => import("./../../../src/pages/macOS-config/index.mdx" /* webpackChunkName: "component---src-pages-mac-os-config-index-mdx" */)
+  "component---src-pages-mac-os-config-index-mdx": () => import("./../../../src/pages/macOS-config/index.mdx" /* webpackChunkName: "component---src-pages-mac-os-config-index-mdx" */),
+  "component---src-pages-nearby-stars-index-mdx": () => import("./../../../src/pages/nearby-stars/index.mdx" /* webpackChunkName: "component---src-pages-nearby-stars-index-mdx" */)
 }
 

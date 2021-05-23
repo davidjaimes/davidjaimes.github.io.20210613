@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-kepler-16-b-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/kepler-16b/index.mdx")),
   "component---src-pages-legal-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/legal/index.mdx")),
   "component---src-pages-linear-regression-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/linear-regression/index.mdx")),
-  "component---src-pages-mac-os-config-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/macOS-config/index.mdx"))
+  "component---src-pages-mac-os-config-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/macOS-config/index.mdx")),
+  "component---src-pages-nearby-stars-index-mdx": preferDefault(require("/Users/djaimes/davidjaimes.github.io/src/pages/nearby-stars/index.mdx"))
 }
 

@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-	siteMetadata: {siteUrl: `https://djaimes.com`},
+	siteMetadata: {siteUrl: `https://davidjaimes.com`},
 	plugins: [
 		`gatsby-plugin-postcss`,
 		`gatsby-plugin-react-helmet`,

@@ -6,6 +6,7 @@ import {Card, Media, Badge, Image} from 'react-bootstrap'
 import {FaBook} from 'react-icons/fa'
 
 // Images
+import NearbyStars from "../images/nearby-stars.png"
 import Kepler16 from "../images/kepler-16b.png"
 import KOI3570 from "../images/koi-3570-pflc.png"
 import JSkyCalc from "../images/jskycalc-user-interface.png"
@@ -15,6 +16,23 @@ import Exercise1 from "../images/exercise1.png"
 export default function CardIndex() {
 	return (
 		<div>
+
+			<Card className="mt-5 mb-5 border border-dark text-muted">
+				<Card.Body>
+					<Media>
+						<Media.Body className="mb-3">
+							<Card.Title><a href="/nearby-stars" className="text-dark stretched-link"><FaBook size={25}/> Nearby Stars to 25.1 Light Years</a></Card.Title>
+							<Badge pill variant="dark">Python</Badge>{' '}
+							<Badge pill variant="dark">AstroPy</Badge>{' '}
+						</Media.Body>
+						<Image src={NearbyStars} rounded className="mb-3 border border-secondary" width={120} height={90} alt='Kepler-16'/>
+					</Media>
+					<Card.Text>
+						<b>Luminosity</b> and <b>surface temperature (color)</b> are two properties of stars we can measure. Using these two characteristics has proved extraordinarily effective un understanding the properties of stars-the <b>Hertzsprung Russell (HR) diagram</b>. This list includes known stars, brown dwarfs, and planets within 25.1 light years of the Sun. Sources are listed at the end of the page. Some values are estimated.
+					</Card.Text>
+				</Card.Body>
+			</Card>
+
 			<Card className="mt-5 mb-5 border border-dark text-muted">
 				<Card.Body>
 					<Media>
