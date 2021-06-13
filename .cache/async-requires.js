@@ -2,10 +2,11 @@
 const preferDefault = m => (m && m.default) || m
 
 exports.components = {
-  "component---cache-caches-gatsby-plugin-offline-app-shell-js": () => import("./../../caches/gatsby-plugin-offline/app-shell.js" /* webpackChunkName: "component---cache-caches-gatsby-plugin-offline-app-shell-js" */),
+  "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-about-index-mdx": () => import("./../../../src/pages/about/index.mdx" /* webpackChunkName: "component---src-pages-about-index-mdx" */),
   "component---src-pages-eclipsing-binaries-index-mdx": () => import("./../../../src/pages/eclipsing-binaries/index.mdx" /* webpackChunkName: "component---src-pages-eclipsing-binaries-index-mdx" */),
   "component---src-pages-gatsby-config-index-mdx": () => import("./../../../src/pages/gatsby-config/index.mdx" /* webpackChunkName: "component---src-pages-gatsby-config-index-mdx" */),
+  "component---src-pages-gatsby-setup-index-mdx": () => import("./../../../src/pages/gatsby-setup/index.mdx" /* webpackChunkName: "component---src-pages-gatsby-setup-index-mdx" */),
   "component---src-pages-index-jsx": () => import("./../../../src/pages/index.jsx" /* webpackChunkName: "component---src-pages-index-jsx" */),
   "component---src-pages-jskycalc-index-mdx": () => import("./../../../src/pages/jskycalc/index.mdx" /* webpackChunkName: "component---src-pages-jskycalc-index-mdx" */),
   "component---src-pages-kepler-16-b-index-mdx": () => import("./../../../src/pages/kepler-16b/index.mdx" /* webpackChunkName: "component---src-pages-kepler-16-b-index-mdx" */),
