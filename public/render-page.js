@@ -2607,7 +2607,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-mdx/gatsby-ssr */ "./node_modules/gatsby-plugin-mdx/gatsby-ssr.js"),
   options: {
     "plugins": [{
-      "resolve": "/Users/djaimes/davidjaimes.github.io/node_modules/gatsby-remark-images",
+      "resolve": "/Users/djaimes/davidjaimes.github.io.20210613/node_modules/gatsby-remark-images",
       "id": "28c42f28-53d0-5cae-aad5-aee248175898",
       "name": "gatsby-remark-images",
       "version": "5.1.0",
@@ -2633,7 +2633,7 @@ var plugins = [{
     "remarkPlugins": [null],
     "rehypePlugins": [null],
     "defaultLayouts": {
-      "default": "/Users/djaimes/davidjaimes.github.io/src/components/homepage.jsx"
+      "default": "/Users/djaimes/davidjaimes.github.io.20210613/src/components/homepage.jsx"
     },
     "extensions": [".mdx", ".md"],
     "gatsbyRemarkPlugins": [{
@@ -2652,7 +2652,7 @@ var plugins = [{
     }],
     "lessBabel": false,
     "mediaTypes": ["text/markdown", "text/x-markdown"],
-    "root": "/Users/djaimes/davidjaimes.github.io"
+    "root": "/Users/djaimes/davidjaimes.github.io.20210613"
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -40154,24 +40154,24 @@ function canAcceptRef(component) {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!****************************************************************************************!*\
-  !*** external "/Users/djaimes/davidjaimes.github.io/node_modules/react-dom/server.js" ***!
-  \****************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** external "/Users/djaimes/davidjaimes.github.io.20210613/node_modules/react-dom/server.js" ***!
+  \*************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/djaimes/davidjaimes.github.io/node_modules/react-dom/server.js");;
+module.exports = require("/Users/djaimes/davidjaimes.github.io.20210613/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!***********************************************************************************!*\
-  !*** external "/Users/djaimes/davidjaimes.github.io/node_modules/react/index.js" ***!
-  \***********************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "/Users/djaimes/davidjaimes.github.io.20210613/node_modules/react/index.js" ***!
+  \********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/djaimes/davidjaimes.github.io/node_modules/react/index.js");;
+module.exports = require("/Users/djaimes/davidjaimes.github.io.20210613/node_modules/react/index.js");;
 
 /***/ }),
 
